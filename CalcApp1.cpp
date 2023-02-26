@@ -55,7 +55,6 @@ bool IsExpression(char input) {
     else return false;
 }
 
-
 //Checks for errors in the string beforehand, to make sure the math expressions do not crash. True means it has an error, false means it doesn't
 bool ErrorCheck(string input) {
 
@@ -184,7 +183,6 @@ bool Precedence(string input1, string input2) {
         return false;
 
     return true;
-
 
 }
 
@@ -331,8 +329,7 @@ string IntoPostResults(string input) {
     return output;
 }
 
-int main()
-{
+int main() {
 
     string mathInput = "25^2"; //receives user input
     string diagnostics = ""; //creates a string with the postfix, formater and calculation to check individual functions
