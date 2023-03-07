@@ -289,8 +289,7 @@ long double PostMath(stack <string> input) {
             tmpHld2 = output.top();
             output.pop();
             tmpHld1 = output.top();
-            output.pop();
-            output.push(tmpHld1 - tmpHld2);
+            output.pop(); output.push(tmpHld1 - tmpHld2);
         }
         else if (input.top()[0] == '%') {
             input.pop();
@@ -336,7 +335,7 @@ int main() {
 
     //main part of the calculator app.
     cout << "\t\t~~CALCULATOR~~\n\t\tType \'stop\' to end program" << endl;
-    while (mathInput.compare("STOP") != 0) {
+    while (mathInput.compare("stop") != 0) {
 
         cout << "Input>>\t";
         getline(cin, mathInput);
